@@ -88,6 +88,18 @@
     <Compile Include="UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlCalendario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlCalendario.Designer.cs">
+      <DependentUpon>UserControlCalendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlEquipoDirectivo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlEquipoDirectivo.Designer.cs">
+      <DependentUpon>UserControlEquipoDirectivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlPuntosInteres.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -115,6 +127,12 @@
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlCalendario.resx">
+      <DependentUpon>UserControlCalendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlEquipoDirectivo.resx">
+      <DependentUpon>UserControlEquipoDirectivo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlPuntosInteres.resx">
       <DependentUpon>UserControlPuntosInteres.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +152,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -12,14 +12,42 @@ namespace PuntuInformacionALM
 {
     public partial class UserControlHome : UserControl
     {
-        public UserControlHome()
+
+        public UserControlHome(Form form1)
         {
             InitializeComponent();
+
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void UserControlHome_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.instagram.com/cescristorey/?hl=es");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://twitter.com/cescristorey?lang=es");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.cescristorey.com/");
         }
     }
 }

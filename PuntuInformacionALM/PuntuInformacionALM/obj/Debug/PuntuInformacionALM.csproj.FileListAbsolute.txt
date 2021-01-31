@@ -23,3 +23,11 @@ C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacio
 C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\bin\Debug\System.Data.SQLite.xml
 C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.UserControlPuntosInteres.resources
 C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.csproj.CopyComplete
+C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.UserControlSugerencias.resources
+C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.UserControlEquipoDirectivo.resources
+C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.UserControlCalendario.resources
+C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\bin\Debug\Interop.AcroPDFLib.dll
+C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\Interop.AcroPDFLib.dll
+C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.csproj.ResolveComReference.cache

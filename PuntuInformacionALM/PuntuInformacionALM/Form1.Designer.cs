@@ -31,7 +31,8 @@ namespace PuntuInformacionALM
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.SidePanel = new System.Windows.Forms.Panel();
             this.btnSugerencias = new System.Windows.Forms.Button();
             this.btnPuntosInteres = new System.Windows.Forms.Button();
             this.btnHorarioAulas = new System.Windows.Forms.Button();
@@ -45,7 +46,8 @@ namespace PuntuInformacionALM
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.SidePanel);
             this.panel1.Controls.Add(this.btnSugerencias);
             this.panel1.Controls.Add(this.btnPuntosInteres);
             this.panel1.Controls.Add(this.btnHorarioAulas);
@@ -58,13 +60,27 @@ namespace PuntuInformacionALM
             this.panel1.Size = new System.Drawing.Size(224, 617);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // button1
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel2.Location = new System.Drawing.Point(3, 68);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 57);
-            this.panel2.TabIndex = 1;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(12, 563);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(43, 42);
+            this.button1.TabIndex = 6;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // SidePanel
+            // 
+            this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.SidePanel.Location = new System.Drawing.Point(3, 3);
+            this.SidePanel.Name = "SidePanel";
+            this.SidePanel.Size = new System.Drawing.Size(10, 84);
+            this.SidePanel.TabIndex = 1;
+            this.SidePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.SidePanel_Paint);
             // 
             // btnSugerencias
             // 
@@ -74,12 +90,13 @@ namespace PuntuInformacionALM
             this.btnSugerencias.ForeColor = System.Drawing.Color.White;
             this.btnSugerencias.Image = ((System.Drawing.Image)(resources.GetObject("btnSugerencias.Image")));
             this.btnSugerencias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSugerencias.Location = new System.Drawing.Point(15, 383);
+            this.btnSugerencias.Location = new System.Drawing.Point(15, 444);
             this.btnSugerencias.Name = "btnSugerencias";
-            this.btnSugerencias.Size = new System.Drawing.Size(206, 57);
+            this.btnSugerencias.Size = new System.Drawing.Size(206, 84);
             this.btnSugerencias.TabIndex = 5;
             this.btnSugerencias.Text = "Sugerencias";
             this.btnSugerencias.UseVisualStyleBackColor = true;
+            this.btnSugerencias.Click += new System.EventHandler(this.btnSugerencias_Click);
             // 
             // btnPuntosInteres
             // 
@@ -89,9 +106,9 @@ namespace PuntuInformacionALM
             this.btnPuntosInteres.ForeColor = System.Drawing.Color.White;
             this.btnPuntosInteres.Image = ((System.Drawing.Image)(resources.GetObject("btnPuntosInteres.Image")));
             this.btnPuntosInteres.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPuntosInteres.Location = new System.Drawing.Point(15, 320);
+            this.btnPuntosInteres.Location = new System.Drawing.Point(15, 354);
             this.btnPuntosInteres.Name = "btnPuntosInteres";
-            this.btnPuntosInteres.Size = new System.Drawing.Size(206, 57);
+            this.btnPuntosInteres.Size = new System.Drawing.Size(206, 84);
             this.btnPuntosInteres.TabIndex = 4;
             this.btnPuntosInteres.Text = "Puntos Interes";
             this.btnPuntosInteres.UseVisualStyleBackColor = true;
@@ -105,12 +122,13 @@ namespace PuntuInformacionALM
             this.btnHorarioAulas.ForeColor = System.Drawing.Color.White;
             this.btnHorarioAulas.Image = ((System.Drawing.Image)(resources.GetObject("btnHorarioAulas.Image")));
             this.btnHorarioAulas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHorarioAulas.Location = new System.Drawing.Point(15, 257);
+            this.btnHorarioAulas.Location = new System.Drawing.Point(12, 264);
             this.btnHorarioAulas.Name = "btnHorarioAulas";
-            this.btnHorarioAulas.Size = new System.Drawing.Size(206, 57);
+            this.btnHorarioAulas.Size = new System.Drawing.Size(206, 84);
             this.btnHorarioAulas.TabIndex = 3;
-            this.btnHorarioAulas.Text = "Horario Aulas";
+            this.btnHorarioAulas.Text = "   Calendario Escolar";
             this.btnHorarioAulas.UseVisualStyleBackColor = true;
+            this.btnHorarioAulas.Click += new System.EventHandler(this.btnHorarioAulas_Click);
             // 
             // btnMapaCentro
             // 
@@ -120,9 +138,9 @@ namespace PuntuInformacionALM
             this.btnMapaCentro.ForeColor = System.Drawing.Color.White;
             this.btnMapaCentro.Image = ((System.Drawing.Image)(resources.GetObject("btnMapaCentro.Image")));
             this.btnMapaCentro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMapaCentro.Location = new System.Drawing.Point(15, 194);
+            this.btnMapaCentro.Location = new System.Drawing.Point(15, 183);
             this.btnMapaCentro.Name = "btnMapaCentro";
-            this.btnMapaCentro.Size = new System.Drawing.Size(206, 57);
+            this.btnMapaCentro.Size = new System.Drawing.Size(206, 84);
             this.btnMapaCentro.TabIndex = 2;
             this.btnMapaCentro.Text = "Mapa Centro";
             this.btnMapaCentro.UseVisualStyleBackColor = true;
@@ -135,12 +153,13 @@ namespace PuntuInformacionALM
             this.btnEquipoDirectivo.ForeColor = System.Drawing.Color.White;
             this.btnEquipoDirectivo.Image = ((System.Drawing.Image)(resources.GetObject("btnEquipoDirectivo.Image")));
             this.btnEquipoDirectivo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEquipoDirectivo.Location = new System.Drawing.Point(15, 131);
+            this.btnEquipoDirectivo.Location = new System.Drawing.Point(15, 93);
             this.btnEquipoDirectivo.Name = "btnEquipoDirectivo";
-            this.btnEquipoDirectivo.Size = new System.Drawing.Size(206, 57);
+            this.btnEquipoDirectivo.Size = new System.Drawing.Size(206, 84);
             this.btnEquipoDirectivo.TabIndex = 1;
             this.btnEquipoDirectivo.Text = "   Equipo Directivo";
             this.btnEquipoDirectivo.UseVisualStyleBackColor = true;
+            this.btnEquipoDirectivo.Click += new System.EventHandler(this.btnEquipoDirectivo_Click);
             // 
             // btnHome
             // 
@@ -150,9 +169,9 @@ namespace PuntuInformacionALM
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(12, 68);
+            this.btnHome.Location = new System.Drawing.Point(12, 3);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(209, 57);
+            this.btnHome.Size = new System.Drawing.Size(209, 84);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = true;
@@ -186,12 +205,13 @@ namespace PuntuInformacionALM
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnEquipoDirectivo;
         private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel SidePanel;
         private System.Windows.Forms.Button btnSugerencias;
         private System.Windows.Forms.Button btnPuntosInteres;
         private System.Windows.Forms.Button btnHorarioAulas;
         private System.Windows.Forms.Button btnMapaCentro;
         private System.Windows.Forms.Panel PanelCambiante;
+        private System.Windows.Forms.Button button1;
     }
 }
 
