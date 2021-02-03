@@ -31,7 +31,6 @@ namespace PuntuInformacionALM
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.SidePanel = new System.Windows.Forms.Panel();
             this.btnSugerencias = new System.Windows.Forms.Button();
             this.btnPuntosInteres = new System.Windows.Forms.Button();
@@ -40,6 +39,8 @@ namespace PuntuInformacionALM
             this.btnEquipoDirectivo = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.PanelCambiante = new System.Windows.Forms.Panel();
+            this.userControl11 = new BotonAdmin.UserControl1();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +48,7 @@ namespace PuntuInformacionALM
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.userControl11);
             this.panel1.Controls.Add(this.SidePanel);
             this.panel1.Controls.Add(this.btnSugerencias);
             this.panel1.Controls.Add(this.btnPuntosInteres);
@@ -60,19 +62,6 @@ namespace PuntuInformacionALM
             this.panel1.Size = new System.Drawing.Size(224, 617);
             this.panel1.TabIndex = 0;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(12, 563);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(43, 42);
-            this.button1.TabIndex = 6;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // SidePanel
             // 
             this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -84,6 +73,7 @@ namespace PuntuInformacionALM
             // 
             // btnSugerencias
             // 
+            this.btnSugerencias.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSugerencias.FlatAppearance.BorderSize = 0;
             this.btnSugerencias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSugerencias.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -100,6 +90,7 @@ namespace PuntuInformacionALM
             // 
             // btnPuntosInteres
             // 
+            this.btnPuntosInteres.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPuntosInteres.FlatAppearance.BorderSize = 0;
             this.btnPuntosInteres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPuntosInteres.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -116,6 +107,7 @@ namespace PuntuInformacionALM
             // 
             // btnHorarioAulas
             // 
+            this.btnHorarioAulas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHorarioAulas.FlatAppearance.BorderSize = 0;
             this.btnHorarioAulas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHorarioAulas.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -132,6 +124,7 @@ namespace PuntuInformacionALM
             // 
             // btnMapaCentro
             // 
+            this.btnMapaCentro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMapaCentro.FlatAppearance.BorderSize = 0;
             this.btnMapaCentro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMapaCentro.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -147,6 +140,7 @@ namespace PuntuInformacionALM
             // 
             // btnEquipoDirectivo
             // 
+            this.btnEquipoDirectivo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEquipoDirectivo.FlatAppearance.BorderSize = 0;
             this.btnEquipoDirectivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEquipoDirectivo.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -163,6 +157,7 @@ namespace PuntuInformacionALM
             // 
             // btnHome
             // 
+            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -183,6 +178,27 @@ namespace PuntuInformacionALM
             this.PanelCambiante.Name = "PanelCambiante";
             this.PanelCambiante.Size = new System.Drawing.Size(881, 617);
             this.PanelCambiante.TabIndex = 1;
+            this.PanelCambiante.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Activar_Admin);
+            // 
+            // userControl11
+            // 
+            this.userControl11.AutoSize = true;
+            this.userControl11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.userControl11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.userControl11.Location = new System.Drawing.Point(15, 556);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(53, 49);
+            this.userControl11.TabIndex = 7;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(114, 569);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
@@ -196,6 +212,7 @@ namespace PuntuInformacionALM
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -211,6 +228,7 @@ namespace PuntuInformacionALM
         private System.Windows.Forms.Button btnHorarioAulas;
         private System.Windows.Forms.Button btnMapaCentro;
         private System.Windows.Forms.Panel PanelCambiante;
+        private BotonAdmin.UserControl1 userControl11;
         private System.Windows.Forms.Button button1;
     }
 }

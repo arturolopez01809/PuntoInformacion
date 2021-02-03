@@ -17,6 +17,13 @@ namespace PuntuInformacionALM
         UserControlSugerencias sugerencias;
         UserControlEquipoDirectivo equipo;
         UserControlCalendario calendario;
+        UserControlEquipoDirectivoAdmin equipo_admin;
+
+        UserControlPuntosInteresAdmin puntoInteresAdmin;
+
+        public bool admin = false;
+
+        FormAdmin form_admin;
 
         public Form1()
         {
@@ -27,6 +34,7 @@ namespace PuntuInformacionALM
             sugerencias = new UserControlSugerencias();
             equipo = new UserControlEquipoDirectivo();
             calendario = new UserControlCalendario();
+            puntoInteresAdmin = new UserControlPuntosInteresAdmin();
 
             PanelCambiante.Controls.Add(home);
             home.Dock = DockStyle.Fill;
@@ -34,25 +42,56 @@ namespace PuntuInformacionALM
 
             SidePanel.Height = btnHome.Height;
 
+            userControl11.BringToFront();
+
             
         }
 
+        /// <summary>
+        /// Evento creado para cambiar el control de usuario de la aplicación en el caso de que se seleccione este botón
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnPuntosInteres_Click(object sender, EventArgs e)
         {
+
             SidePanel.Height = btnPuntosInteres.Height;
             SidePanel.Top = btnPuntosInteres.Top;
 
-            if(!PanelCambiante.Contains(puntos_interes))
+            if (!admin)
             {
-                PanelCambiante.Controls.Add(puntos_interes);
-                puntos_interes.Dock = DockStyle.Fill;
-                puntos_interes.BringToFront();
+                if (!PanelCambiante.Contains(puntos_interes))
+                {
+                    PanelCambiante.Controls.Add(puntos_interes);
+                    puntos_interes.Dock = DockStyle.Fill;
+                    puntos_interes.BringToFront();
+                }
+                else
+                {
+                    puntos_interes.BringToFront();
+                }
             } else
             {
-                puntos_interes.BringToFront();
+                if (!PanelCambiante.Contains(puntoInteresAdmin))
+                {
+                    PanelCambiante.Controls.Add(puntoInteresAdmin);
+                    puntoInteresAdmin.Dock = DockStyle.Fill;
+                    puntoInteresAdmin.BringToFront();
+                }
+                else
+                {
+                    puntoInteresAdmin.BringToFront();
+                }
             }
+
+            
         }
 
+        /// <summary>
+        /// Evento creado para cambiar el control de usuario de la aplicación en el caso de que se seleccione este botón
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnHome_Click(object sender, EventArgs e)
         {
             SidePanel.Height = btnHome.Height;
@@ -69,6 +108,11 @@ namespace PuntuInformacionALM
             }
         }
 
+        /// <summary>
+        /// Evento creado para cambiar el control de usuario de la aplicación en el caso de que se seleccione este botón
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSugerencias_Click(object sender, EventArgs e)
         {
             SidePanel.Height = btnSugerencias.Height;
@@ -86,20 +130,46 @@ namespace PuntuInformacionALM
             }
         }
 
+        /// <summary>
+        /// Evento creado para cambiar el control de usuario de la aplicación en el caso de que se seleccione este botón
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnEquipoDirectivo_Click(object sender, EventArgs e)
         {
-            SidePanel.Height = btnEquipoDirectivo.Height;
-            SidePanel.Top = btnEquipoDirectivo.Top;
+            
 
-            if (!PanelCambiante.Contains(equipo))
+            if (!admin)
             {
-                PanelCambiante.Controls.Add(equipo);
-                equipo.Dock = DockStyle.Fill;
-                equipo.BringToFront();
+                SidePanel.Height = btnEquipoDirectivo.Height;
+                SidePanel.Top = btnEquipoDirectivo.Top;
+
+                if (!PanelCambiante.Contains(equipo))
+                {
+                    PanelCambiante.Controls.Add(equipo);
+                    equipo.Dock = DockStyle.Fill;
+                    equipo.BringToFront();
+                }
+                else
+                {
+                    equipo.BringToFront();
+                }
             }
             else
             {
-                equipo.BringToFront();
+                SidePanel.Height = btnEquipoDirectivo.Height;
+                SidePanel.Top = btnEquipoDirectivo.Top;
+
+                if (!PanelCambiante.Contains(equipo_admin))
+                {
+                    PanelCambiante.Controls.Add(equipo_admin);
+                    equipo_admin.Dock = DockStyle.Fill;
+                    equipo_admin.BringToFront();
+                }
+                else
+                {
+                    equipo_admin.BringToFront();
+                }
             }
         }
 
@@ -108,6 +178,11 @@ namespace PuntuInformacionALM
             this.Close();
         }
 
+        /// <summary>
+        /// Evento creado para cambiar el control de usuario de la aplicación en el caso de que se seleccione este botón
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnHorarioAulas_Click(object sender, EventArgs e)
         {
             SidePanel.Height = btnHorarioAulas.Height;
@@ -128,6 +203,41 @@ namespace PuntuInformacionALM
         private void SidePanel_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        /// <summary>
+        /// Evento creado para la aparición de un nuevo formulario en el caso de que se seleccione este botón
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            form_admin = new FormAdmin(this);
+            form_admin.Show();
+        }
+
+
+        private void Activar_Admin(object sender, MouseEventArgs e)
+        {
+            form_admin = new FormAdmin(this);
+            form_admin.Show();
+        }
+
+        private void Activar_Admin(object sender, EventArgs e)
+        {
+            form_admin = new FormAdmin(this);
+            form_admin.Show();
+        }
+
+        private void userControl11_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            form_admin = new FormAdmin(this);
+            form_admin.Show();
         }
     }
 }
