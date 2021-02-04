@@ -35,6 +35,7 @@ namespace PuntuInformacionALM
             equipo = new UserControlEquipoDirectivo();
             calendario = new UserControlCalendario();
             puntoInteresAdmin = new UserControlPuntosInteresAdmin();
+            equipo_admin = new UserControlEquipoDirectivoAdmin();
 
             PanelCambiante.Controls.Add(home);
             home.Dock = DockStyle.Fill;

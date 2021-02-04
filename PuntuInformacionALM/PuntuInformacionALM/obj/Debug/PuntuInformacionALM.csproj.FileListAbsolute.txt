@@ -40,3 +40,4 @@ C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacio
 C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.csproj.CopyComplete
 C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.exe
 C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.pdb
+C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.csprojAssemblyReference.cache
