@@ -41,3 +41,8 @@ C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacio
 C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.exe
 C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.pdb
 C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.csprojAssemblyReference.cache
+C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\bin\Debug\PuntuInformacionALM.exe.manifest
+C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\bin\Debug\PuntuInformacionALM.application
+C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.exe.manifest
+C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.application
+C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.UserControlMapaCentro.resources

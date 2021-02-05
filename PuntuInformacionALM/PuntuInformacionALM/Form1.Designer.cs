@@ -31,6 +31,8 @@ namespace PuntuInformacionALM
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.userControl11 = new BotonAdmin.UserControl1();
             this.SidePanel = new System.Windows.Forms.Panel();
             this.btnSugerencias = new System.Windows.Forms.Button();
             this.btnPuntosInteres = new System.Windows.Forms.Button();
@@ -39,8 +41,6 @@ namespace PuntuInformacionALM
             this.btnEquipoDirectivo = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.PanelCambiante = new System.Windows.Forms.Panel();
-            this.userControl11 = new BotonAdmin.UserControl1();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,26 @@ namespace PuntuInformacionALM
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(224, 617);
             this.panel1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(114, 569);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // userControl11
+            // 
+            this.userControl11.AutoSize = true;
+            this.userControl11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.userControl11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.userControl11.Location = new System.Drawing.Point(15, 556);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(53, 49);
+            this.userControl11.TabIndex = 7;
             // 
             // SidePanel
             // 
@@ -137,6 +157,7 @@ namespace PuntuInformacionALM
             this.btnMapaCentro.TabIndex = 2;
             this.btnMapaCentro.Text = "Mapa Centro";
             this.btnMapaCentro.UseVisualStyleBackColor = true;
+            this.btnMapaCentro.Click += new System.EventHandler(this.btnMapaCentro_Click);
             // 
             // btnEquipoDirectivo
             // 
@@ -179,26 +200,6 @@ namespace PuntuInformacionALM
             this.PanelCambiante.Size = new System.Drawing.Size(881, 617);
             this.PanelCambiante.TabIndex = 1;
             this.PanelCambiante.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Activar_Admin);
-            // 
-            // userControl11
-            // 
-            this.userControl11.AutoSize = true;
-            this.userControl11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.userControl11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.userControl11.Location = new System.Drawing.Point(15, 556);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(53, 49);
-            this.userControl11.TabIndex = 7;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(114, 569);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 

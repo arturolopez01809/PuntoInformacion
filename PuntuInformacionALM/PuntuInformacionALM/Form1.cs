@@ -18,8 +18,9 @@ namespace PuntuInformacionALM
         UserControlEquipoDirectivo equipo;
         UserControlCalendario calendario;
         UserControlEquipoDirectivoAdmin equipo_admin;
+        UserControlMapaCentro mapa;
 
-        UserControlPuntosInteresAdmin puntoInteresAdmin;
+        
 
         public bool admin = false;
 
@@ -34,8 +35,8 @@ namespace PuntuInformacionALM
             sugerencias = new UserControlSugerencias();
             equipo = new UserControlEquipoDirectivo();
             calendario = new UserControlCalendario();
-            puntoInteresAdmin = new UserControlPuntosInteresAdmin();
             equipo_admin = new UserControlEquipoDirectivoAdmin();
+            mapa = new UserControlMapaCentro();
 
             PanelCambiante.Controls.Add(home);
             home.Dock = DockStyle.Fill;
@@ -59,8 +60,7 @@ namespace PuntuInformacionALM
             SidePanel.Height = btnPuntosInteres.Height;
             SidePanel.Top = btnPuntosInteres.Top;
 
-            if (!admin)
-            {
+            
                 if (!PanelCambiante.Contains(puntos_interes))
                 {
                     PanelCambiante.Controls.Add(puntos_interes);
@@ -71,19 +71,7 @@ namespace PuntuInformacionALM
                 {
                     puntos_interes.BringToFront();
                 }
-            } else
-            {
-                if (!PanelCambiante.Contains(puntoInteresAdmin))
-                {
-                    PanelCambiante.Controls.Add(puntoInteresAdmin);
-                    puntoInteresAdmin.Dock = DockStyle.Fill;
-                    puntoInteresAdmin.BringToFront();
-                }
-                else
-                {
-                    puntoInteresAdmin.BringToFront();
-                }
-            }
+            
 
             
         }
@@ -239,6 +227,23 @@ namespace PuntuInformacionALM
         {
             form_admin = new FormAdmin(this);
             form_admin.Show();
+        }
+
+        private void btnMapaCentro_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = btnHorarioAulas.Height;
+            SidePanel.Top = btnHorarioAulas.Top;
+
+            if (!PanelCambiante.Contains(mapa))
+            {
+                PanelCambiante.Controls.Add(mapa);
+                mapa.Dock = DockStyle.Fill;
+                mapa.BringToFront();
+            }
+            else
+            {
+                mapa.BringToFront();
+            }
         }
     }
 }
