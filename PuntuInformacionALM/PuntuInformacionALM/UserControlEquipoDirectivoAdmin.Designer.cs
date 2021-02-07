@@ -29,16 +29,17 @@ namespace PuntuInformacionALM
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlEquipoDirectivoAdmin));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pBDirector = new System.Windows.Forms.PictureBox();
+            this.pBJefeEstudios = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lbDirector = new System.Windows.Forms.Label();
+            this.lbNombreDirector = new System.Windows.Forms.Label();
+            this.lbJefeEstudios = new System.Windows.Forms.Label();
+            this.lbNombreJefeEstudios = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,32 +51,33 @@ namespace PuntuInformacionALM
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.pBDirector)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBJefeEstudios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pBDirector
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(73, 71);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(127, 144);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
+            this.pBDirector.Image = ((System.Drawing.Image)(resources.GetObject("pBDirector.Image")));
+            this.pBDirector.Location = new System.Drawing.Point(73, 71);
+            this.pBDirector.Name = "pBDirector";
+            this.pBDirector.Size = new System.Drawing.Size(127, 144);
+            this.pBDirector.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBDirector.TabIndex = 17;
+            this.pBDirector.TabStop = false;
             // 
-            // pictureBox2
+            // pBJefeEstudios
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(371, 71);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(127, 144);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 26;
-            this.pictureBox2.TabStop = false;
+            this.pBJefeEstudios.Image = ((System.Drawing.Image)(resources.GetObject("pBJefeEstudios.Image")));
+            this.pBJefeEstudios.Location = new System.Drawing.Point(371, 71);
+            this.pBJefeEstudios.Name = "pBJefeEstudios";
+            this.pBJefeEstudios.Size = new System.Drawing.Size(127, 144);
+            this.pBJefeEstudios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBJefeEstudios.TabIndex = 26;
+            this.pBJefeEstudios.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -107,45 +109,45 @@ namespace PuntuInformacionALM
             this.pictureBox5.TabIndex = 29;
             this.pictureBox5.TabStop = false;
             // 
-            // label1
+            // lbDirector
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(84, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 19);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "Director/a";
+            this.lbDirector.AutoSize = true;
+            this.lbDirector.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDirector.Location = new System.Drawing.Point(84, 32);
+            this.lbDirector.Name = "lbDirector";
+            this.lbDirector.Size = new System.Drawing.Size(99, 19);
+            this.lbDirector.TabIndex = 30;
+            this.lbDirector.Text = "Director/a";
             // 
-            // label6
+            // lbNombreDirector
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(84, 241);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 19);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "Mariángeles";
+            this.lbNombreDirector.AutoSize = true;
+            this.lbNombreDirector.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNombreDirector.Location = new System.Drawing.Point(84, 241);
+            this.lbNombreDirector.Name = "lbNombreDirector";
+            this.lbNombreDirector.Size = new System.Drawing.Size(108, 19);
+            this.lbNombreDirector.TabIndex = 31;
+            this.lbNombreDirector.Text = "Mariángeles";
             // 
-            // label2
+            // lbJefeEstudios
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(349, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 19);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "Jefe/a de Estudios";
+            this.lbJefeEstudios.AutoSize = true;
+            this.lbJefeEstudios.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbJefeEstudios.Location = new System.Drawing.Point(349, 32);
+            this.lbJefeEstudios.Name = "lbJefeEstudios";
+            this.lbJefeEstudios.Size = new System.Drawing.Size(171, 19);
+            this.lbJefeEstudios.TabIndex = 32;
+            this.lbJefeEstudios.Text = "Jefe/a de Estudios";
             // 
-            // label7
+            // lbNombreJefeEstudios
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(379, 241);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 19);
-            this.label7.TabIndex = 33;
-            this.label7.Text = "Jaime Matas";
+            this.lbNombreJefeEstudios.AutoSize = true;
+            this.lbNombreJefeEstudios.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNombreJefeEstudios.Location = new System.Drawing.Point(379, 241);
+            this.lbNombreJefeEstudios.Name = "lbNombreJefeEstudios";
+            this.lbNombreJefeEstudios.Size = new System.Drawing.Size(108, 19);
+            this.lbNombreJefeEstudios.TabIndex = 33;
+            this.lbNombreJefeEstudios.Text = "Jaime Matas";
             // 
             // label3
             // 
@@ -212,20 +214,22 @@ namespace PuntuInformacionALM
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel1.Location = new System.Drawing.Point(43, 19);
+            this.panel1.Location = new System.Drawing.Point(47, 19);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 261);
             this.panel1.TabIndex = 40;
+            this.panel1.Click += new System.EventHandler(this.panel1_Click);
             // 
             // panel2
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel2.Location = new System.Drawing.Point(344, 19);
+            this.panel2.Location = new System.Drawing.Point(335, 19);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 261);
             this.panel2.TabIndex = 41;
+            this.panel2.Click += new System.EventHandler(this.panel2_Click);
             // 
             // panel3
             // 
@@ -236,6 +240,7 @@ namespace PuntuInformacionALM
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 261);
             this.panel3.TabIndex = 41;
+            this.panel3.Click += new System.EventHandler(this.panel3_Click);
             // 
             // panel4
             // 
@@ -246,6 +251,7 @@ namespace PuntuInformacionALM
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 261);
             this.panel4.TabIndex = 41;
+            this.panel4.Click += new System.EventHandler(this.panel4_Click);
             // 
             // panel5
             // 
@@ -256,6 +262,11 @@ namespace PuntuInformacionALM
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 261);
             this.panel5.TabIndex = 42;
+            this.panel5.Click += new System.EventHandler(this.panel5_Click);
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.IsBalloon = true;
             // 
             // UserControlEquipoDirectivoAdmin
             // 
@@ -272,19 +283,20 @@ namespace PuntuInformacionALM
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbNombreJefeEstudios);
+            this.Controls.Add(this.lbJefeEstudios);
+            this.Controls.Add(this.lbNombreDirector);
+            this.Controls.Add(this.lbDirector);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pBJefeEstudios);
+            this.Controls.Add(this.pBDirector);
             this.Name = "UserControlEquipoDirectivoAdmin";
             this.Size = new System.Drawing.Size(881, 617);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Load += new System.EventHandler(this.UserControlEquipoDirectivoAdmin_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pBDirector)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBJefeEstudios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -295,15 +307,15 @@ namespace PuntuInformacionALM
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pBDirector;
+        private System.Windows.Forms.PictureBox pBJefeEstudios;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbDirector;
+        private System.Windows.Forms.Label lbNombreDirector;
+        private System.Windows.Forms.Label lbJefeEstudios;
+        private System.Windows.Forms.Label lbNombreJefeEstudios;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label4;
@@ -315,5 +327,6 @@ namespace PuntuInformacionALM
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

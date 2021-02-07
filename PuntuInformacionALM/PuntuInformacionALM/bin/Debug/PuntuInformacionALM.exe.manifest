@@ -162,14 +162,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PuntuInformacionALM.exe" size="1320928">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PuntuInformacionALM.exe" size="1326560">
       <assemblyIdentity name="PuntuInformacionALM" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>EAPuDkiHvFZ2q3JKdryeCChSsdqiGNmWu1pYwRmCh0M=</dsig:DigestValue>
+        <dsig:DigestValue>6Pw0IBqMCT2KOfSkMqMX4kcwug5iUb44loh/PWbTQAM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

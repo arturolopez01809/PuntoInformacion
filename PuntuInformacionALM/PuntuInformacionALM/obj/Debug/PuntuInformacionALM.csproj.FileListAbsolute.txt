@@ -46,3 +46,5 @@ C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacio
 C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.exe.manifest
 C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.application
 C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.UserControlMapaCentro.resources
+C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.UserControlMosoAdmin.resources
+C:\code\SegundoTrimestre\DI\PuntoInformacion\PuntuInformacionALM\PuntuInformacionALM\obj\Debug\PuntuInformacionALM.FormularioEdicion.resources

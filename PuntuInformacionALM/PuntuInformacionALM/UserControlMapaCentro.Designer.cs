@@ -31,10 +31,10 @@ namespace PuntuInformacionALM
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlMapaCentro));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnPrimeraPlanta = new System.Windows.Forms.Button();
-            this.btnSegundaPlanta = new System.Windows.Forms.Button();
             this.btnTerceraPlanta = new System.Windows.Forms.Button();
+            this.btnSegundaPlanta = new System.Windows.Forms.Button();
+            this.btnPrimeraPlanta = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -51,32 +51,24 @@ namespace PuntuInformacionALM
             this.panel1.Size = new System.Drawing.Size(881, 116);
             this.panel1.TabIndex = 0;
             // 
-            // pictureBox1
+            // btnTerceraPlanta
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 122);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(881, 495);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnPrimeraPlanta
-            // 
-            this.btnPrimeraPlanta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnPrimeraPlanta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrimeraPlanta.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrimeraPlanta.Location = new System.Drawing.Point(27, 13);
-            this.btnPrimeraPlanta.Name = "btnPrimeraPlanta";
-            this.btnPrimeraPlanta.Size = new System.Drawing.Size(221, 91);
-            this.btnPrimeraPlanta.TabIndex = 0;
-            this.btnPrimeraPlanta.Text = "Primera Planta";
-            this.btnPrimeraPlanta.UseVisualStyleBackColor = false;
-            this.btnPrimeraPlanta.Click += new System.EventHandler(this.btnPrimeraPlanta_Click);
+            this.btnTerceraPlanta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnTerceraPlanta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTerceraPlanta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTerceraPlanta.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTerceraPlanta.Location = new System.Drawing.Point(629, 13);
+            this.btnTerceraPlanta.Name = "btnTerceraPlanta";
+            this.btnTerceraPlanta.Size = new System.Drawing.Size(221, 91);
+            this.btnTerceraPlanta.TabIndex = 2;
+            this.btnTerceraPlanta.Text = "Tercera Planta";
+            this.btnTerceraPlanta.UseVisualStyleBackColor = false;
+            this.btnTerceraPlanta.Click += new System.EventHandler(this.btnTerceraPlanta_Click);
             // 
             // btnSegundaPlanta
             // 
             this.btnSegundaPlanta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnSegundaPlanta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSegundaPlanta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSegundaPlanta.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSegundaPlanta.Location = new System.Drawing.Point(336, 13);
@@ -87,18 +79,29 @@ namespace PuntuInformacionALM
             this.btnSegundaPlanta.UseVisualStyleBackColor = false;
             this.btnSegundaPlanta.Click += new System.EventHandler(this.btnSegundaPlanta_Click);
             // 
-            // btnTerceraPlanta
+            // btnPrimeraPlanta
             // 
-            this.btnTerceraPlanta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnTerceraPlanta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTerceraPlanta.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTerceraPlanta.Location = new System.Drawing.Point(629, 13);
-            this.btnTerceraPlanta.Name = "btnTerceraPlanta";
-            this.btnTerceraPlanta.Size = new System.Drawing.Size(221, 91);
-            this.btnTerceraPlanta.TabIndex = 2;
-            this.btnTerceraPlanta.Text = "Tercera Planta";
-            this.btnTerceraPlanta.UseVisualStyleBackColor = false;
-            this.btnTerceraPlanta.Click += new System.EventHandler(this.btnTerceraPlanta_Click);
+            this.btnPrimeraPlanta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnPrimeraPlanta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrimeraPlanta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrimeraPlanta.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrimeraPlanta.Location = new System.Drawing.Point(27, 13);
+            this.btnPrimeraPlanta.Name = "btnPrimeraPlanta";
+            this.btnPrimeraPlanta.Size = new System.Drawing.Size(221, 91);
+            this.btnPrimeraPlanta.TabIndex = 0;
+            this.btnPrimeraPlanta.Text = "Primera Planta";
+            this.btnPrimeraPlanta.UseVisualStyleBackColor = false;
+            this.btnPrimeraPlanta.Click += new System.EventHandler(this.btnPrimeraPlanta_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 122);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(881, 495);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // UserControlMapaCentro
             // 

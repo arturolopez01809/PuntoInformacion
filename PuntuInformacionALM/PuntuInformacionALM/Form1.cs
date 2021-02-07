@@ -19,6 +19,7 @@ namespace PuntuInformacionALM
         UserControlCalendario calendario;
         UserControlEquipoDirectivoAdmin equipo_admin;
         UserControlMapaCentro mapa;
+        UserControlMosoAdmin modo_admin;
 
         
 
@@ -37,6 +38,8 @@ namespace PuntuInformacionALM
             calendario = new UserControlCalendario();
             equipo_admin = new UserControlEquipoDirectivoAdmin();
             mapa = new UserControlMapaCentro();
+
+            modo_admin = new UserControlMosoAdmin();
 
             PanelCambiante.Controls.Add(home);
             home.Dock = DockStyle.Fill;
@@ -126,7 +129,8 @@ namespace PuntuInformacionALM
         /// <param name="e"></param>
         private void btnEquipoDirectivo_Click(object sender, EventArgs e)
         {
-            
+
+            this.admin = modo_admin.ReturnAdmin();
 
             if (!admin)
             {
@@ -225,14 +229,28 @@ namespace PuntuInformacionALM
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            form_admin = new FormAdmin(this);
-            form_admin.Show();
+            /*form_admin = new FormAdmin(this);
+            //form_admin.Show();*/
+
+            if (!PanelCambiante.Contains(modo_admin))
+            {
+                PanelCambiante.Controls.Add(modo_admin);
+                modo_admin.Dock = DockStyle.Fill;
+                modo_admin.BringToFront();
+            }
+            else
+            {
+                modo_admin.BringToFront();
+            }
+
+            this.admin = modo_admin.ReturnAdmin();
+
         }
 
         private void btnMapaCentro_Click(object sender, EventArgs e)
         {
-            SidePanel.Height = btnHorarioAulas.Height;
-            SidePanel.Top = btnHorarioAulas.Top;
+            SidePanel.Height = btnMapaCentro.Height;
+            SidePanel.Top = btnMapaCentro.Top;
 
             if (!PanelCambiante.Contains(mapa))
             {

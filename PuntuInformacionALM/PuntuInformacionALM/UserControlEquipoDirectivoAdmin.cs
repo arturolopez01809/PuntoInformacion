@@ -15,6 +15,9 @@ namespace PuntuInformacionALM
         public UserControlEquipoDirectivoAdmin()
         {
             InitializeComponent();
+
+            this.toolTip1.SetToolTip(this.panel1, "Dale click sobre el panel para editar");
+
             panel1.SendToBack();
             panel1.BorderStyle = System.Windows.Forms.BorderStyle.None;
 
@@ -113,5 +116,68 @@ namespace PuntuInformacionALM
 
         }
 
+        private void UserControlEquipoDirectivoAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            FormularioEdicion f = new FormularioEdicion(pBDirector, lbNombreDirector);
+            f.Show();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+            FormularioEdicion f = new FormularioEdicion(pBJefeEstudios, lbNombreJefeEstudios);
+            f.Show();
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+            FormularioEdicion f = new FormularioEdicion(pictureBox3, label8);
+            f.Show();
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+            FormularioEdicion f = new FormularioEdicion(pictureBox4, label9);
+            f.Show();
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+            FormularioEdicion f = new FormularioEdicion(pictureBox5, label10);
+            f.Show();
+        }
+
+        private void panel5_Click(object sender, EventArgs e)
+        {
+            FormularioEdicion f = new FormularioEdicion(pictureBox5, label10);
+            f.Show();
+        }
+
+        private void panel4_Click(object sender, EventArgs e)
+        {
+            FormularioEdicion f = new FormularioEdicion(pictureBox4, label9);
+            f.Show();
+        }
+
+        private void panel3_Click(object sender, EventArgs e)
+        {
+            FormularioEdicion f = new FormularioEdicion(pictureBox3, label8);
+            f.Show();
+        }
+
+        private void panel2_Click(object sender, EventArgs e)
+        {
+            FormularioEdicion f = new FormularioEdicion(pBJefeEstudios, lbNombreJefeEstudios);
+            f.Show();
+        }
     }
 }

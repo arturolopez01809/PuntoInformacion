@@ -123,6 +123,12 @@
     <Compile Include="FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormularioEdicion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioEdicion.Designer.cs">
+      <DependentUpon>FormularioEdicion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserControl1.cs">
@@ -155,6 +161,12 @@
     <Compile Include="UserControlMapaCentro.Designer.cs">
       <DependentUpon>UserControlMapaCentro.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlMosoAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMosoAdmin.Designer.cs">
+      <DependentUpon>UserControlMosoAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlPuntosInteres.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -185,6 +197,9 @@
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormularioEdicion.resx">
+      <DependentUpon>FormularioEdicion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -208,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlMapaCentro.resx">
       <DependentUpon>UserControlMapaCentro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMosoAdmin.resx">
+      <DependentUpon>UserControlMosoAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlPuntosInteres.resx">
       <DependentUpon>UserControlPuntosInteres.cs</DependentUpon>
