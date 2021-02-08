@@ -26,7 +26,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -131,6 +131,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -202,13 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
@@ -239,6 +240,7 @@
     <EmbeddedResource Include="UserControlUsuario1.resx">
       <DependentUpon>UserControlUsuario1.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="images\calendario_escolar_granada_20-21.PDF" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -284,6 +286,105 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\_91359496_mediaitem91359495.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\73c95c77903108cf6bb1616512505b41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\426ef1322c4685acdb1134f2ee9ce288.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\1507564472_973290_1507564969_album_normal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\power_off_button_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\primera_planta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\segunda_planta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\SESION-DE-FOTOS-PERFIL-PROFESIONAL-10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\shutdown_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\shutdown_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\tercera_planta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\twitter_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\website_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\call_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\clock_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\conference_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\door_closed_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\door_sensor_alarmed_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\edit_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\email_send_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\exit_sign_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\home_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\images.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\instagram_old_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\location_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\logo_CristoRey2-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\map_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\marker_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\marker_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\near_me_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\power_off_button_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_CristoRey_Movil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\website_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

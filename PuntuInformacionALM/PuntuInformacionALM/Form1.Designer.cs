@@ -90,7 +90,7 @@ namespace PuntuInformacionALM
             // 
             // SidePanel
             // 
-            this.SidePanel.BackColor = System.Drawing.Color.Yellow;
+            this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.SidePanel.Location = new System.Drawing.Point(3, 3);
             this.SidePanel.Name = "SidePanel";
             this.SidePanel.Size = new System.Drawing.Size(10, 84);
